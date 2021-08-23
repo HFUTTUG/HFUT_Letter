@@ -1,0 +1,4 @@
+[submodule "hfutbadges"]
+	path = hfutbadges
+	url = git@github.com:HFUTTUG/HFUT-badge.git
+	branch = latest
