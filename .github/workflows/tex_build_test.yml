@@ -1,5 +1,7 @@
 name: Tex Build Test
-on: [push]
+on:
+  push:
+    branches: [ master ]
 jobs:
   build_latex:
     runs-on: ubuntu-latest
