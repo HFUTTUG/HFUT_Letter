@@ -1,0 +1,136 @@
+% !TEX TS-program = xelatex
+% HFUT Letter Template
+% Github: https://github.com/HFUTTUG/HFUT_Letter
+% Authot: HFUTTUG
+% License: 
+% 1. Faculty and staff of Hefei University of Technology are free to use 
+% this template.
+% 2. This project is under LPPL v1.3c license.
+%%
+
+\documentclass[12pt,letterpaper]{letter} 
+
+\usepackage[UTF8, fontset=fandol]{ctex}
+\usepackage{color}
+\usepackage{wallpaper}
+\usepackage{graphicx}
+\usepackage{lipsum} % 随机生成文本, 可删去, 同时删去 ‘\lipsem’ 命令
+\usepackage{parskip} 
+\usepackage{geometry} % so that page 2> have 1" margins
+\usepackage{fancyhdr} % for fancy headers
+\usepackage{lastpage} 
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyhead{} % footer for pages 2 on
+\lfoot{\footnotesize {\textit{来自 \From{} }}} % 左脚注
+\cfoot{} % Change for center footer
+\rfoot{\footnotesize \thepage\ / \pageref{LastPage}} % Right footer page #s 
+
+\renewcommand{\footrulewidth}{0pt}
+
+
+%this gives you Berkeley fonts
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\definecolor{hfutred}{rgb}{0.67, 0.12, 0.14}
+\topmargin=-1.1in % Moves the top margin; here it is a negative value to move the text up
+\textheight=9.5in % Total text height for this page
+\oddsidemargin=-10pt % Left margin; widened here with a negative value
+\textwidth=7in % Text width
+\let\raggedleft\raggedright % Makes the date appear on the left
+\CenterWallPaper{0.5}{bg.pdf}
+\def\topnote{
+    \begin{center}
+        \begin{picture}(1000,1)
+            \put(0,-20){\includegraphics[width=.5\textwidth]{hfutbadges/PDF/HFUT_Horizontal_name&badge.pdf}}
+            \put(300,33){\footnotesize 地址(Address): \Address }
+            \put(300,22){\footnotesize 邮编(Postcode): \CityZip }
+            \put(300,11){\footnotesize 电话(Tel): \TEL }
+            \put(300,00){\footnotesize 邮箱(Email): \Email }
+            \put(300,-11){\footnotesize 主页(Page): \URL }
+            \put(0,-28){\textcolor{hfutred}{\rule{\textwidth}{1.2pt}}}
+        \end{picture}
+    \end{center}
+    \vspace{10mm}
+}
+
+
+%% >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+%% >>> personal configuration >>>
+\date{}
+\def\From{HFUTTUG} % Fill in your name here
+\def\To{工大信纸模板用户}
+\def\Subject{感谢朋友们对 HFUTTUG 的支持} 
+\def\Where{计算机与信息学院} % Your department/institution
+\def\Email{username@hfut.edu}
+\def\TEL{(+86) 000-0000-0000} 
+\def\URL{https://github.com/HFUTTUG}
+
+
+% 合肥校区
+\def\Address{安徽省合肥市屯溪路193号} 
+\def\CityZip{230009}
+
+% 宣城校区, 请注释合肥校区内容, 并将下两行代码取消注释
+% \def\Address{安徽省宣城市宣州区薰化路301号} 
+% \def\CityZip{242000}
+
+%% <<< personal configuration <<<
+%% <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+\begin{document}
+
+\topnote % 头部, 如后文有需要可添加
+
+亲爱的 \To{},
+
+\lipsum[1-3] % 随机生成内容
+
+
+%% ****************************************************
+%% * 使用帮助                                          *
+%% ****************************************************
+
+\newpage
+% \newgeometry{top=1in,bottom=1in,right=1in,left=1in} % 页面大小切换
+
+\textbf{一些常用 \LaTeX 语法}
+
+
+
+\begin{itemize}
+    \item bullets 编号
+\end{itemize}
+
+\begin{enumerate}
+    \item 数字编号
+    \item 数字编号中嵌入 bullets 编号
+    \begin{itemize}
+        \item 嵌入 bullets 编号  
+    \end{itemize}
+    \item 数字编号中嵌入数字编号
+    \begin{enumerate}
+        \item 嵌入 bullets 编号  
+    \end{enumerate}
+\end{enumerate}
+
+\textit{引用格式: }
+
+\begin{quotation}
+    \lipsum[4] % 随机生成内容
+\end{quotation}
+
+\textbf{\textit{verse 格式:}}
+
+\begin{verse}
+    \lipsum[5-6] % 随机生成内容
+\end{verse}
+
+\vspace{2cm}
+
+祝好，
+
+\From{}
+
+\end{document}
