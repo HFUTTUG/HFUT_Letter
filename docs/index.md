@@ -3,7 +3,12 @@
 [![Tex Build Test](https://github.com/HFUTTUG/HFUT_Letter/actions/workflows/tex_build_test.yml/badge.svg)](https://github.com/HFUTTUG/HFUT_Letter/actions/workflows/tex_build_test.yml)
 [![Homepage Deploy](https://github.com/HFUTTUG/HFUT_Letter/actions/workflows/page_deploy.yml/badge.svg)](https://github.com/HFUTTUG/HFUT_Letter/actions/workflows/page_deploy.yml)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=HFUTTUG.HFUT_Letter)
+
+<br><br>
+
 [**模板实例**](https://HFUTTUG.github.io/HFUT_Letter/main.pdf) 
+<br>
+[**latest release**](https://HFUTTUG.github.io/HFUT_Letter/HFUT_Letter.zip)
 
 项目主页：[HFUT_Letter Github Page](https://HFUTTUG.github.io/HFUT_Letter)
 
