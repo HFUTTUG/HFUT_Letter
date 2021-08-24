@@ -47,6 +47,14 @@ jobs:
           mv /tmp/main.pdf docs/main.pdf
           rm -rf hfutbadges
     # <<< generate pdf <<<
+    
+    # >>> generate packages >>>
+      - name: Generate packages
+        run: |
+          git clone --recursive https://github.com/HFUTTUG/HFUT_Letter.git
+          zip -r docs/HFUT_Letter.zip HFUT_Letter
+          rm -rf HFUT_Letter
+    # <<< generate packages <<<
 
     # >>> build page >>>
       - name: Set up Python 3.9
